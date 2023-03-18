@@ -1,8 +1,8 @@
 {
   "name": "SAN IGPT",
   "short_name": "SAN IGPT",
-  "theme_color": "#343541",
-  "background_color": "#343541",
+  "theme_color": "#f7f7f8",
+  "background_color": "#f7f7f8",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
