@@ -209,7 +209,49 @@ button {
   background: transparent;
 }
 
+/* hover subtle styling when clicking a send button */
+button:hover {
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+/* now, focus within, active, darker gray for button */
+button:active {
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+
+
 form img {
   width: 30px;
   height: 30px;
+}
+
+/* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
+@media (max-width: 444px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 5px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  form img {
+    width: 20px;
+    height: 20px;
+  }
 }
