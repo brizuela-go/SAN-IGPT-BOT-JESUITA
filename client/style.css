@@ -225,23 +225,3 @@ form img {
   width: 30px;
   height: 30px;
 }
-
-/* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
-@media (max-width: 444px) {
-  h1 {
-    font-size: 52px;
-  }
-
-  .description {
-    font-size: 17px;
-  }
-
-  .message {
-    font-size: 16px;
-  }
-
-  /* responsive textarea, everytime I focus on it on iphone, it's not responsive */
-  textarea {
-    font-size: 12px;
-  }
-}
