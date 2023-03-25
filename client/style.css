@@ -10,7 +10,6 @@
 
 body {
   background: #f7f7f8;
-  position: relative;
 }
 
 h1 {
@@ -227,10 +226,10 @@ form img {
   height: 30px;
 }
 
-/* Media query for screens smaller than 444px */
+/* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
 @media (max-width: 444px) {
   h1 {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   .description {
@@ -238,7 +237,7 @@ form img {
   }
 
   .message {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   form {
