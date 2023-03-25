@@ -221,8 +221,6 @@ button:active {
   border-radius: 5px;
 }
 
-
-
 form img {
   width: 30px;
   height: 30px;
@@ -231,11 +229,11 @@ form img {
 /* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
 @media (max-width: 444px) {
   h1 {
-    font-size: 44px;
+    font-size: 52px;
   }
 
   .description {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .message {
@@ -243,11 +241,17 @@ form img {
   }
 
   form {
-    padding: 5px;
+    padding: 6px;
   }
 
+  /* responsive textarea, everytime I focus on it on iphone, it's not responsive */
   textarea {
     font-size: 14px;
+
+    width: 100%;
+    height: 100%;
+
+    resize: none;
   }
 
   form img {
