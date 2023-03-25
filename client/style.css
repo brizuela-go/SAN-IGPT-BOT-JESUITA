@@ -257,8 +257,6 @@ form img {
     padding-bottom: 0;
     margin-bottom: 0;
     overflow: hidden;
-    height: 100%;
     position: fixed;
-    width: 100%;
   }
 }
