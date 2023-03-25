@@ -130,3 +130,14 @@ ladImage.addEventListener("click", () => {
   audio.play();
   toggle("animate");
 });
+
+// Fix for iOS Safari leaving blank space when keyboard is closed
+const fixIOSSafariKeyboardIssue = () => {
+  const inputs = document.querySelectorAll("input, textarea");
+  inputs.forEach((input) => {
+    input.addEventListener("blur", () => {
+      window.scrollTo(0, 0);
+    });
+  });
+};
+fixIOSSafariKeyboardIssue();
