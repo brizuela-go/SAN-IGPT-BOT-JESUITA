@@ -252,10 +252,4 @@ form img {
     width: 20px;
     height: 20px;
   }
-
-  body {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-  }
 }
