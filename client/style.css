@@ -253,4 +253,14 @@ form img {
     width: 20px;
     height: 20px;
   }
+
+  /* body scroll lock */
+  body {
+    overflow: hidden;
+  }
+
+  /* chat_container scroll lock */
+  #chat_container {
+    overflow-y: hidden;
+  }
 }
