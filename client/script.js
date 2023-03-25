@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
   const data = new FormData(form);
 
   // if input is less than 2 characters, alert user
-  if (data.get("prompt").length < 2) {
+  if (data.get("prompt").length < 3) {
     alert("Por favor, escribe algo con más de 2 caracteres...");
     form.reset();
     return;
