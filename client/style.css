@@ -226,10 +226,10 @@ form img {
   height: 30px;
 }
 
-/* media queries */
-@media (max-width: 768px) {
+/* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
+@media (max-width: 444px) {
   h1 {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   .description {
@@ -238,33 +238,6 @@ form img {
 
   .message {
     font-size: 16px;
-  }
-
-  form {
-    padding: 5px;
-  }
-
-  textarea {
-    font-size: 16px;
-  }
-
-  form img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 46px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .message {
-    font-size: 14px;
   }
 
   form {
@@ -280,37 +253,13 @@ form img {
     height: 20px;
   }
 
-  #lad-image {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 320px) {
-  h1 {
-    font-size: 20px;
+  #app {
+    height: 100%;
   }
 
-  .description {
-    font-size: 12px;
-  }
-
-  .message {
-    font-size: 12px;
-  }
-
+  /* form sticked down */
   form {
-    padding: 5px;
-  }
-
-  textarea {
-    font-size: 12px;
-  }
-
-  form img {
-    width: 20px;
-    height: 20px;
+    position: fixed;
+    bottom: 0;
   }
 }
-
-/* end of media queries */
