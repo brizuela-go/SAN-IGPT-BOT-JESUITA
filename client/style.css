@@ -176,6 +176,9 @@ form {
   display: flex;
   flex-direction: row;
   gap: 10px;
+
+  position: fixed;
+  bottom: 0;
 }
 
 /* focus, bigger shadow, subtile border, smooth animation */
@@ -255,11 +258,5 @@ form img {
 
   #app {
     height: 100%;
-  }
-
-  /* form sticked down */
-  form {
-    position: fixed;
-    bottom: 0;
   }
 }
