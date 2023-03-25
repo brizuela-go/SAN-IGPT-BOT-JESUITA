@@ -176,9 +176,6 @@ form {
   display: flex;
   flex-direction: row;
   gap: 10px;
-
-  position: fixed;
-  bottom: 0;
 }
 
 /* focus, bigger shadow, subtile border, smooth animation */
@@ -256,7 +253,12 @@ form img {
     height: 20px;
   }
 
-  #app {
+  body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow: hidden;
     height: 100%;
+    position: fixed;
+    width: 100%;
   }
 }
