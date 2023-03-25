@@ -10,7 +10,6 @@
 
 body {
   background: #f7f7f8;
-  position: relative;
 }
 
 h1 {
@@ -23,22 +22,20 @@ h1 {
 
 .description {
   color: #343541;
-  font-size: 19px;
+  font-size: 20px;
   text-align: center;
   /* card  */
   max-width: 400px;
   margin: 0 auto;
   padding: 26px;
-
   background: #ececf1;
   border-radius: 10px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #f7f7f8;
 
   display: flex;
   flex-direction: column;
@@ -90,11 +87,7 @@ h1 {
 }
 
 .ai {
-  background: #ececf1;
-  /* subtile border */
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  background: #40414f;
 }
 
 .chat {
@@ -112,6 +105,7 @@ h1 {
   width: 36px;
   height: 36px;
   border-radius: 5px;
+
   background: #ca1630;
 
   display: flex;
@@ -120,9 +114,7 @@ h1 {
 }
 
 .ai .profile {
-  background: transparent;
-  /* subtle gray bg */
-  background: #f7f7f8;
+  background: #10a37f;
 }
 
 .profile img {
@@ -131,16 +123,10 @@ h1 {
   object-fit: contain;
 }
 
-.ai .profile img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-}
-
 .message {
   flex: 1;
 
-  color: #343541;
+  color: #dcdcdc;
   font-size: 20px;
 
   max-width: 100%;
@@ -170,30 +156,15 @@ form {
   padding: 10px;
   background: #f7f7f8;
 
-  /* border and shadow */
-  border-radius: 10px;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-/* focus, bigger shadow, subtile border, smooth animation */
-form:focus-within {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-
-/* while form not in focus, return the previous smooth animation, ease in out */
-form:not(:focus-within) {
-  transition: all 0.3s ease-in-out;
-}
-
 textarea {
   width: 100%;
 
-  color: #1d2125;
+  color: #343541;
   font-size: 18px;
 
   padding: 10px;
@@ -210,57 +181,7 @@ button {
   background: transparent;
 }
 
-/* hover subtle styling when clicking a send button */
-button:hover {
-  background: #eeeeee;
-  border-radius: 5px;
-}
-
-/* now, focus within, active, darker gray for button */
-button:active {
-  background: #e0e0e0;
-  border-radius: 5px;
-}
-
 form img {
   width: 30px;
   height: 30px;
-}
-
-/* media query for less or equal than 444 px, responsiveness, smaller text, etc... */
-@media (max-width: 444px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .message {
-    font-size: 16px;
-  }
-
-  form {
-    padding: 5px;
-  }
-
-  textarea {
-    font-size: 14px;
-  }
-
-  form img {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* body scroll lock */
-  body {
-    overflow: hidden;
-  }
-
-  /* chat_container scroll lock */
-  #chat_container {
-    overflow-y: hidden;
-  }
 }
