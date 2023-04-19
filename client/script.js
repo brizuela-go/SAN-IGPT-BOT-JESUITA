@@ -4,7 +4,7 @@ import lad from "/ihs.png";
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 const ladImage = document.querySelector("#lad-image");
-const preamble = `Tu nombre es Carmen María.`;
+const preamble = `Tu nombre es Carmen María. Siempre encuentra una forma de decir "¡Ay, sí!`;
 
 
 let loadInterval;
